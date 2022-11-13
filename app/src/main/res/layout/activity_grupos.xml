@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_papel_blanco_arte_35956_2379"
+    tools:context=".grupos">
+
+    <TextView
+        android:id="@+id/bienve10"
+        android:layout_width="416dp"
+        android:layout_height="41dp"
+        android:background="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bienve11"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@drawable/dibu"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve12" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:fontFamily="serif"
+        android:text="@string/nomre_grupo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bienve11" />
+
+    <Button
+        android:id="@+id/facultades3"
+        android:layout_width="204dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="@string/facultadesgrup"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/grupos3"
+        app:layout_constraintTop_toTopOf="@+id/bienve12" />
+
+    <TextView
+        android:id="@+id/bienve12"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="736dp"
+        android:background="@color/bluess"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/grupos3"
+        android:layout_width="204dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="204dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/tus_gruposfacu"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve12"
+        app:layout_constraintEnd_toEndOf="@+id/facultadeshome"
+        app:layout_constraintStart_toStartOf="@+id/bienve6"
+        app:layout_constraintTop_toTopOf="@+id/bienve12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/publicar"
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="188dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="serif"
+        android:text="@string/publicar"
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

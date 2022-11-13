@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">natiwali</string>
+    <string name="bienvenidos">¡Bienvenidos!</string>
+    <string name="esta_es_una_aplicaci_n_en_la_que_podr_s_comunicarte_con_personas_de_la_jorge_tadeo_lozano_y_diferentes_personas_acerca_de_los_temas_que_te_interesen">Esta es una aplicación en la que podrás comunicarte con personas de la Jorge Tadeo Lozano y diferentes personas, acerca de los temas que te interesen.</string>
+    <string name="ya_tengo_cuenta">Ya tengo cuenta</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="soy_nuev">Soy nuev@</string>
+    <string name="suscribirse">Suscribirse</string>
+    <string name="iniciar_sesi_n2">Iniciar sesión</string>
+    <string name="inicie_su_cuenta">INICIE SU CUENTA</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="suscribirse2">suscribirse</string>
+    <string name="inicie_su_cuenta2">INICIE SU CUENTA</string>
+    <string name="crear">Crear</string>
+    <string name="facultades">FACULTADES</string>
+    <string name="facultadesbion">Facultades</string>
+    <string name="tus_grupos">Tus grupos</string>
+    <string name="ver_m_s">Ver más</string>
+    <string name="ver_m_s2">Ver más</string>
+    <string name="ver_m_s3">Ver más</string>
+    <string name="ciencias_naturales">Ciencias Naturales</string>
+    <string name="ver_m_s4">Ver más</string>
+    <string name="ciencias_sociales">Ciencias Sociales</string>
+    <string name="ciencias_economicas_y_administrativas">Ciencias economicas y administrativas</string>
+    <string name="artes_y_dise_o">Artes y Diseño</string>
+    <string name="grupos">GRUPOS</string>
+    <string name="tus_gruposhomr">Tus grupos</string>
+    <string name="facultadeshome">Facultades</string>
+    <string name="nomre_grupo">NOMRE GRUPO</string>
+    <string name="facultadesgrup">Facultades</string>
+    <string name="tus_gruposfacu">Tus grupos</string>
+    <string name="publicar">Publicar</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "272481300457",
+    "firebase_url": "https://webproject-42e14-default-rtdb.firebaseio.com",
+    "project_id": "webproject-42e14",
+    "storage_bucket": "webproject-42e14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272481300457:android:183a8dd5977fdf8834e578",
+        "android_client_info": {
+          "package_name": "com.nataliaber.natiwali"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272481300457-98h03pdajadqgsle0id786h4b98cr4u4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdjcu8NMyx2VOWg7lKFTuLIiHIbq6kHSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272481300457-98h03pdajadqgsle0id786h4b98cr4u4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
