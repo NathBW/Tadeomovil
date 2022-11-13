@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".camara1">
+
+        <TextView
+            android:id="@+id/bienve13"
+            android:layout_width="416dp"
+            android:layout_height="41dp"
+            android:background="@color/blue"
+            android:fontFamily="serif"
+            android:paddingTop="50dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bienve14"
+            android:layout_width="411dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="-70dp"
+            android:background="@drawable/dibu"
+            android:fontFamily="serif"
+            android:paddingTop="50dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+
+            android:textSize="44sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bienve13"
+            app:layout_constraintVertical_bias="0.0"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="90dp"
+            android:fontFamily="serif"
+            android:text="@string/nomre_grupo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bienve14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bienve11" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft = "15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bienve14"
+            app:layout_constraintVertical_bias="0.067">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/comentarios"
+                android:layout_width="381dp"
+                android:layout_height="117dp"
+                android:hint="Escribir pregutnta o comentario"
+                android:inputType="textShortMessage|textLongMessage" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/bienve15"
+            android:layout_width="381dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="-55dp"
+            android:layout_marginLeft = "15dp"
+            android:background="@color/blue"
+            android:fontFamily="serif"
+            android:paddingTop="50dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <Button
+            android:id="@+id/Camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom = "50dp"
+            android:layout_marginLeft = "155dp"
+            android:text="Camara"
+            app:layout_constraintBottom_toBottomOf="@+id/bienve15"
+            app:layout_constraintEnd_toEndOf="@+id/bienve15"
+            app:layout_constraintStart_toStartOf="@+id/bienve15"
+            app:layout_constraintTop_toTopOf="@+id/bienve15" />
+
+
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="256dp"
+            android:layout_height="221dp"
+            android:layout_marginLeft = "75dp"
+            android:layout_marginBottom = "50dp"
+            app:layout_constraintBottom_toTopOf="@+id/publicar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bienve15"
+            app:layout_constraintVertical_bias="0.526"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/publicar2"
+            android:layout_width="411dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="112dp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="serif"
+            android:text="@string/publicar"
+            android:textAlignment="center"
+            android:textColor="#616161"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bienve15"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+</layout>
