@@ -87,7 +87,6 @@ class suscribirse : AppCompatActivity() {
                             "admin" to false
                         )
                         // Add a new document with a generated ID
-                        val db = Firebase.firestore
                         db.collection("users")
                             .add(user)
                             .addOnSuccessListener { documentReference ->
@@ -105,6 +104,7 @@ class suscribirse : AppCompatActivity() {
 
                 }else{
                     Toast.makeText(baseContext, "Algo Salió mal" + Task.exception, Toast.LENGTH_SHORT).show()
+
                 }
             }
     }

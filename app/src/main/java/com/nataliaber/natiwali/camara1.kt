@@ -36,11 +36,20 @@ import com.google.firebase.firestore.ktx.firestoreSettings
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.ktx.storage
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
+import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.OutputStream
 
 
 class camara1 : AppCompatActivity() {
+    private val filer = 1
+    private val database = Firebase.database
+    val MyRef = database.getReference("Imagenes")
+    private lateinit var imgUri: Uri
+
     private lateinit var binding : ActivityCamara1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +69,8 @@ class camara1 : AppCompatActivity() {
                             BuildConfig.APPLICATION_ID + ".fileprovider", file
                         )
                     it.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
+                }.also {
+                    startActivityForResult(intent, REQ_CAM)
                 }
             }
            //camara.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
@@ -133,4 +144,33 @@ class camara1 : AppCompatActivity() {
         return BitmapFactory.decodeFile(file.toString())
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQ_CAM && resultCode == RESULT_OK){
+            val imgBitmap = data?.extras?.get("data") as Bitmap
+            uploadImgToFirebase(imgBitmap)
+        }
+    }
+
+    private fun uploadImgToFirebase(imgBitmap: Bitmap) {
+        val baos = ByteArrayOutputStream()
+        val ref = FirebaseStorage.getInstance().reference.child("image")
+        imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
+
+        val img = baos.toByteArray()
+        ref.putBytes(img)
+            .addOnCompleteListener{
+                if(it.isSuccessful){
+                    ref.downloadUrl.addOnCompleteListener{ Task ->
+                        Task.result.let{Uri ->
+                        imgUri = Uri }
+                    }
+                }
+            }
+    }
+
+
+    companion object {
+        const val REQ_CAM = 100
+    }
 }
