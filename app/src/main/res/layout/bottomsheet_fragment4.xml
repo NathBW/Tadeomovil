@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="850dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El Programa cuenta con acreditación internacional otorgada por la Sociedad
+                    Interamericana de Prensa a través del Consejo Latinoamericano de Acreditación de la Educación en
+                    Periodismo y Comunicación CLAEP. Somos pioneros en la formación de profesionales de la comunicación
+                    y el periodismo y nuestros estudiantes son formados para desempeñarse en cualquiera de los campos de
+                    la comunicación y el periodismo. El Programa cuenta con Re Acreditación de Alta calidad otorgada por
+                    el Ministerio de Educación Nacional."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

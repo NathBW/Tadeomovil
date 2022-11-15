@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="878dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Nuestro pregrado en Estudios Literarios y Edición es el único en el país en donde el
+                    trabajo editorial se define como parte sustancial del currículo y no como un énfasis electivo. Busca
+                    una fusión equilibrada entre los Estudios literarios y el ejercicio editorial profesional. En este
+                    sentido, los estudiantes del pregrado pueden ocupar cualquier cargo como editores, formular su propia
+                    empresa editorial o dedicarse a la investigación en sentido estricto. Finalmente, el programa abre
+                    campos como la gestión y promoción de la lectura, la gestión cultural y la investigación y creación
+                    de material enfocado a los niños y jóvenes. Por otro lado, contiene una línea en edición crítica que
+                    acerca al estudiante a una visión más académica del quehacer editorial."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

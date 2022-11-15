@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_papel_blanco_arte_35956_2379"
+    tools:context=".Economicas">
+
+    <Button
+        android:id="@+id/atraseco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/orange"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve25"
+        app:layout_constraintEnd_toEndOf="@+id/bienve25"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bienve25"
+        android:layout_width="416dp"
+        android:layout_height="54dp"
+        android:background="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bienve26"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@drawable/dibu"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve27"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="-70dp"
+        android:fontFamily="serif"
+        android:text="ECONOMICAS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve26"
+        app:layout_constraintEnd_toEndOf="@+id/bienve26"
+        app:layout_constraintStart_toStartOf="@+id/bienve26"
+        app:layout_constraintTop_toTopOf="@+id/bienve26"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <Button
+        android:id="@+id/ECOgruposhome5"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/tus_gruposhomr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bienve6"
+        app:layout_constraintTop_toTopOf="@+id/bienve27"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ECOfacultadhome5"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/facultades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gruposhome"
+        app:layout_constraintTop_toBottomOf="@+id/bienve25"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bienve27"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@color/bluess"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve25"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/eco5"
+        android:layout_width="256dp"
+        android:layout_height="72dp"
+        android:fontFamily="serif"
+        android:text="Administración de empresas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/ver8eco"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/eco5"
+        app:layout_constraintTop_toBottomOf="@+id/bienve26"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/ver9eco"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eco7eco"
+        app:layout_constraintTop_toBottomOf="@+id/bienve26"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <Button
+        android:id="@+id/ver10eco"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toEndOf="@+id/eco9eco"
+        app:layout_constraintTop_toBottomOf="@+id/bienve26"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/ver11eco"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toEndOf="@+id/eco10eco"
+        app:layout_constraintTop_toBottomOf="@+id/bienve26"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Button
+        android:id="@+id/ver12eco"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toEndOf="@+id/eco8eco"
+        app:layout_constraintTop_toBottomOf="@+id/bienve26"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <TextView
+        android:id="@+id/eco7eco"
+        android:layout_width="254dp"
+        android:layout_height="91dp"
+        android:fontFamily="serif"
+        android:text="Comercio internacional y finanzas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <TextView
+        android:id="@+id/eco8eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Contaduría pública"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.694" />
+
+    <TextView
+        android:id="@+id/eco10eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Economía"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <TextView
+        android:id="@+id/eco9eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Mercadeo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.503" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

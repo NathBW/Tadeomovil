@@ -3,7 +3,9 @@ package com.nataliaber.natiwali
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -14,18 +16,17 @@ import com.nataliaber.natiwali.databinding.ActivitySuscribirseBinding
 
 class home : AppCompatActivity() {
 
-    private lateinit var db : FirebaseFirestore
     private lateinit var auth : FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityHomeBinding.inflate(layoutInflater)
         //setContentView(R.layout.activity_home)
         setContentView(binding.root)
-        db = Firebase.firestore
+
         auth = FirebaseAuth.getInstance()
         val user = auth.currentUser
         if (user !=null){
-            Toast.makeText(baseContext, "Bienvenido" + auth.currentUser , Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, "Bienvenido " + user.email , Toast.LENGTH_SHORT).show()
         }
 
 
@@ -37,10 +38,39 @@ class home : AppCompatActivity() {
         }
 
 
-        val grupis=findViewById<Button>(R.id.gruposhome)
+        val homegrupis=findViewById<Button>(R.id.gruposhome)
+        homegrupis.setOnClickListener{
+            val homegrupislanzar = Intent(this, home::class.java)
+            startActivity(homegrupislanzar)
+        }
+
+        val grupis=findViewById<Button>(R.id.textViewResult)
         grupis.setOnClickListener{
             val grupislanzar = Intent(this, grupos::class.java)
             startActivity(grupislanzar)
         }
+
+        readFireStoreData()
     }
+
+
+
+    fun readFireStoreData() {
+        val db = FirebaseFirestore.getInstance()
+        db.collection("guides")
+            .get()
+            .addOnCompleteListener{
+                val result: StringBuffer = StringBuffer()
+
+                if(it.isSuccessful) {
+                    for (document in it.result!!) {
+                        result.append(document.data.getValue("title")).append(":  ")
+                            .append(document.data.getValue("content")).append("\n\n")
+                    }
+                    val exti=findViewById<Button>(R.id.textViewResult).setText(result)
+                }
+
+            }
+    }
+
 }

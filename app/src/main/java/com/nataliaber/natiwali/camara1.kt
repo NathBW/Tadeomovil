@@ -23,6 +23,10 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
 import com.google.firebase.firestore.FirebaseFirestoreSettings
@@ -49,15 +53,22 @@ class camara1 : AppCompatActivity() {
     private val database = Firebase.database
     val MyRef = database.getReference("Imagenes")
     private lateinit var imgUri: Uri
-
+    private lateinit var auth : FirebaseAuth
     private lateinit var binding : ActivityCamara1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCamara1Binding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser
+        var database = FirebaseDatabase.getInstance().reference
         //setContentView(R.layout.activity_camara1)
 
+        val atraspublicar = findViewById<Button>(R.id.atraspublcar)
+        atraspublicar.setOnClickListener{
+            val atraspublicarlanzar = Intent(this, grupos::class.java)
+            startActivity((atraspublicarlanzar))
+        }
         binding.Camara.setOnClickListener{
 
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
@@ -69,24 +80,53 @@ class camara1 : AppCompatActivity() {
                             BuildConfig.APPLICATION_ID + ".fileprovider", file
                         )
                     it.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
-                }.also {
-                    startActivityForResult(intent, REQ_CAM)
                 }
             }
            //camara.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
                 camara.launch(intent)
         }
-            binding.publicar2.setOnClickListener {
-                saveToGallery().also {
-                    val mandarlanzar = Intent(this, grupos::class.java)
-                    startActivity(mandarlanzar)
-                }
+        //val input = findViewById<EditText>(R.id.comentarios).text.toString()
+        //val input = binding.inputComentarios.text.toString()
+
+            binding.guardar2.setOnClickListener {
+                saveToGallery()
             }
+        binding.publicar2.setOnClickListener{
+            //saveFireStore(input).also {
+                val mandarlanzar = Intent(this, grupos::class.java)
+                startActivity(mandarlanzar).also {
+                    var empno = binding.inputComentarios.text.toString()
+                    var esal = binding.editTextTextPersonName.text.toString().toInt()
+
+                    database.child(esal.toString()).setValue(comentario(empno))
+                    Toast.makeText(this@camara1, "Comentario guardado", Toast.LENGTH_SHORT).show()
+                }
+           // }
+        }
         //val btnCamara = findViewById<Button>(R.id.Camara)
         //binding.Camara.setOnClickListener {
         //    startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
         //}
+
     }
+
+    //fun saveFireStore(input: String) {
+    //    val db = FirebaseFirestore.getInstance()
+    //    val coment : MutableMap<String, Any> = HashMap()
+    //    coment["input"] = input
+
+    //    db.collection("photos")
+    //        .add(coment)
+    //        .addOnSuccessListener {
+    //            Toast.makeText(this@camara1, "Comentario guardado", Toast.LENGTH_SHORT).show()
+    //        }
+    //        .addOnFailureListener{
+    //            Toast.makeText(this@camara1, "Comentario NO SE PUDO guardar", Toast.LENGTH_SHORT).show()
+    //        }
+
+    //}
+
+
 
     val camara = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
             if(result.resultCode == RESULT_OK){
@@ -144,33 +184,4 @@ class camara1 : AppCompatActivity() {
         return BitmapFactory.decodeFile(file.toString())
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQ_CAM && resultCode == RESULT_OK){
-            val imgBitmap = data?.extras?.get("data") as Bitmap
-            uploadImgToFirebase(imgBitmap)
-        }
-    }
-
-    private fun uploadImgToFirebase(imgBitmap: Bitmap) {
-        val baos = ByteArrayOutputStream()
-        val ref = FirebaseStorage.getInstance().reference.child("image")
-        imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
-
-        val img = baos.toByteArray()
-        ref.putBytes(img)
-            .addOnCompleteListener{
-                if(it.isSuccessful){
-                    ref.downloadUrl.addOnCompleteListener{ Task ->
-                        Task.result.let{Uri ->
-                        imgUri = Uri }
-                    }
-                }
-            }
-    }
-
-
-    companion object {
-        const val REQ_CAM = 100
-    }
 }

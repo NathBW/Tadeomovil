@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="878dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text = "El programa de Biología Marina se destaca por ser pionero en el diseño e implementación del estudio de las Ciencias del Mar en Colombia. Cuenta con más de 50 años de trayectoria investigando y comprendiendo los fenómenos relacionados con la vida en el mar, la flora y la fauna marina y la relación de estos con su medio."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

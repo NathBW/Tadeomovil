@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="878dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El Programa de Artes Plásticas de Utadeo pretende formar artistas, enriqueciendo las destrezas técnicas y oficios de las artes, y potenciando el pensamiento creador a partir de la movilización de la percepción, la sensibilidad y la imaginación. El Programa de Artes Plásticas de Utadeo encuadra esa filosofía en diversas opciones: Plástica Visual, Plástica en Medios, Plástica Espacial y Plástica Social, la cual es distintiva de este programa. Esta área pretende articular lo artístico a distintas dimensiones de lo social y lo cultural. Los estudios se desarrollan a lo largo de 4 años por el sistema de créditos."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

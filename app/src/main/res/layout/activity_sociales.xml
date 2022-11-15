@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_papel_blanco_arte_35956_2379"
+    tools:context=".Sociales">
+
+    <Button
+        android:id="@+id/atrassoci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/orange"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bienve16"
+        android:layout_width="420dp"
+        android:layout_height="54dp"
+        android:background="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bienve17"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@drawable/dibu"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve18"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="serif"
+        android:text="SOCIALES"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bienve17"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/SOCIgruposhome3"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/tus_gruposhomr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SOCIfacultadhome3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bienve18"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <Button
+        android:id="@+id/SOCIfacultadhome3"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/facultades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve16"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bienve18"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@color/bluess"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve16"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/soci3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="serif"
+        android:text="Historia del Arte"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/soci8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soci5"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/sociver15"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve17"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/ver18"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toEndOf="@+id/soci5"
+        app:layout_constraintTop_toBottomOf="@+id/bienve17"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Button
+        android:id="@+id/ver20"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/soci4"
+        app:layout_constraintTop_toBottomOf="@+id/bienve17"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <Button
+        android:id="@+id/ver21"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/soci2"
+        app:layout_constraintTop_toBottomOf="@+id/ver20"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/ver22"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/soci8"
+        app:layout_constraintTop_toBottomOf="@+id/ver20"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <Button
+        android:id="@+id/ver23"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/soci6"
+        app:layout_constraintTop_toBottomOf="@+id/ver20"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <TextView
+        android:id="@+id/soci4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Derecho"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soci3" />
+
+    <TextView
+        android:id="@+id/soci5"
+        android:layout_width="190dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="serif"
+        android:text="Cine y televisión"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/sociver15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/soci2"
+        android:layout_width="212dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="serif"
+        android:text="Comunicación social-periodismo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soci4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/soci6"
+        android:layout_width="187dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="serif"
+        android:text="Estudios literarios y edición"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soci8"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/soci8"
+        android:layout_width="210dp"
+        android:layout_height="68dp"
+        android:fontFamily="serif"
+        android:text="Relaciones internacionales"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ver21" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

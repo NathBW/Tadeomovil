@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="848dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El pregrado de Derecho de la Universidad Jorge Tadeo Lozano busca formar futuros abogados
+                     y abogadas para que tengan la solidez jurídica y las habilidades interdisciplinares para desempeñarse
+                     con destreza en el ámbito laboral nacional e internacional. Como parte de la Facultad de Ciencias
+                     Sociales, la formación impartida en el marco del Programa de Derecho busca que el conocimiento de la
+                     normatividad nacional e internacional se complemente con el estudio de las Relaciones Internacionales y
+                     la Ciencia Política. Este diferencial hace que las personas que culminan la carrera se destaquen por sus
+                     capacidades de buscar soluciones jurídicas innovadoras que impacten de forma positiva a la sociedad."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

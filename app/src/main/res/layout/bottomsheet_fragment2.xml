@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="846dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El programa de Cine y Televisión de la Universidad Jorge Tadeo Lozano concibe al cine,
+                     la televisión y el audiovisual como un sector profesional en franco crecimiento y especialización.
+                     Formamos profesionales integrales, con una comprensión transversal de los oficios del cine, con un
+                     manejo riguroso de los aspectos tecnológicos y técnicos del oficio audiovisual, conocedores de las
+                     dimensiones narrativas y técnicas del lenguaje cinematográfico, con un criterio amplio y diverso de
+                     los contextos culturales, sociales y estéticos. Nos interesa promover el diálogo permanente entre
+                     industria, creadores y academia para poder comprender las necesidades y oportunidades del medio
+                      profesional."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

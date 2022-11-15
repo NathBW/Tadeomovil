@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="857dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El programa de Relaciones Internacionales de la Universidad Jorge Tadeo Lozano busca
+                    formar futuros profesionales para que tengan la creatividad y las habilidades interdisciplinares para
+                    liderar transformaciones globales. Como parte de la Facultad de Ciencias Sociales, la formación
+                    impartida en el marco del Programa de Relaciones Internacionales busca que el conocimiento de la realidad
+                    internacional se complemente con el estudio del Derecho y la Ciencia Política. Este diferencial hace que las
+                    personas que culminan la carrera se destaquen por sus capacidades de buscar soluciones innovadoras que impacten
+                    de forma positiva a la sociedad."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

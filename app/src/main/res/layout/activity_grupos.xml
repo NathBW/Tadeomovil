@@ -47,7 +47,7 @@
         android:layout_width="327dp"
         android:layout_height="51dp"
         android:fontFamily="serif"
-        android:text="@string/nomre_grupo"
+        android:text="PUBLICAR"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="40sp"
@@ -103,11 +103,27 @@
         app:layout_constraintTop_toTopOf="@+id/bienve12"
         app:layout_constraintVertical_bias="1.0" />
 
+
+    <TextView
+        android:id="@+id/textViewResultdata"
+        android:layout_width="400dp"
+        android:layout_height="593dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="serif"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/publicar"
+        app:layout_constraintTop_toBottomOf="@id/bienve11" />
+
     <Button
         android:id="@+id/publicar"
         android:layout_width="411dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginTop="492dp"
         android:backgroundTint="@color/orange"
         android:fontFamily="serif"
         android:text="@string/publicar"
@@ -116,6 +132,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve11"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

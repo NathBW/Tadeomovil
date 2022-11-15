@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="878dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="En el programa de Diseño Interactivo formamos profesionales que contribuyen a la construcción permanente de la teoría y la práctica propias del medio digital. Buscamos que nuestros egresados tengan una incidencia significativa en la industria de los contenidos digitales, en los ámbitos productivo, académico e investigativo.
+
+                    Nuestro programa forma profesionales competitivos, creativos, comprometidos y propositivos que saben adaptarse a la evolución del medio digital, a través del desarrollo de productos interactivos, en línea con las transformaciones sociales y tecnológicas."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

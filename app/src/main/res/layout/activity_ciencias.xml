@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_papel_blanco_arte_35956_2379"
+    tools:context=".Ciencias">
+
+    <Button
+        android:id="@+id/atrascien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/orange"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve19"
+        app:layout_constraintEnd_toEndOf="@+id/bienve19"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bienve19" />
+
+    <TextView
+        android:id="@+id/bienve19"
+        android:layout_width="439dp"
+        android:layout_height="52dp"
+        android:background="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bienve20"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@drawable/dibu"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve21"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="serif"
+        android:text="CIENCIAS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bienve20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bienve20"
+        app:layout_constraintVertical_bias="0.817" />
+
+    <Button
+        android:id="@+id/CIEgruposhome2"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/tus_gruposhomr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bienve6"
+        app:layout_constraintTop_toBottomOf="@+id/bienve19"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/CIEfacultadhome2"
+        android:layout_width="207dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        android:text="@string/facultades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gruposhome"
+        app:layout_constraintTop_toBottomOf="@+id/bienve19"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bienve21"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:background="@color/bluess"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve19"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/ciencias4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Biología Marina"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve20" />
+
+    <TextView
+        android:id="@+id/ciencias5"
+        android:layout_width="210dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="serif"
+        android:text="Modelado y simulación computacional"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciencias4"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <Button
+        android:id="@+id/ver3"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/ciencias5"
+        app:layout_constraintTop_toBottomOf="@+id/bienve20"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <Button
+        android:id="@+id/ver"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toEndOf="@+id/ciencias4"
+        app:layout_constraintTop_toBottomOf="@+id/bienve20"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/ver2"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/ciencias6"
+        app:layout_constraintTop_toBottomOf="@+id/bienve20"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <Button
+        android:id="@+id/ver7"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ciencias2"
+        app:layout_constraintTop_toBottomOf="@+id/bienve20"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <Button
+        android:id="@+id/ver8"
+        android:layout_width="107dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/ver_m_s4"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/ciencias7"
+        app:layout_constraintTop_toBottomOf="@+id/bienve20"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <TextView
+        android:id="@+id/ciencias2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Ingeniería de sistemas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciencias6"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <TextView
+        android:id="@+id/ciencias7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="serif"
+        android:text="Biología Ambiental"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciencias2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ciencias6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Ingeniería industrial"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ver7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciencias5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

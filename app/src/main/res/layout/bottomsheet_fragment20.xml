@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="850dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Somos el primer programa de Mercadeo en el país y nos mantenemos líderes en la formación de profesionales en este campo. Contamos con espacios de discusión académica en torno al desarrollo y la proyección en las diferentes áreas del mercadeo, lo que nos convierte en uno de los programas más competitivos a nivel nacional. Nuestros egresados cuentan, además, con un espíritu investigador en función del consumidor y los mercados. Nuestra calidad se ve reflejada en el alto número de estudiantes y la excelente valoración de los empleadores sobre la capacidad de los egresados y el papel que cumplen en sus organizaciones."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

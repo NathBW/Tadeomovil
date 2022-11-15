@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="855dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El Programa de Contaduría Pública de la Universidad Jorge Tadeo Lozano dispone de un currículo moderno que incorpora una pedagogía y una didáctica para que el estudiante aprenda y obtenga sólidos conocimientos en los procesos relacionados con el diseño, emisión y análisis de reportes contables financieros y no-financieros, destinados a diferentes usuarios y grupos de interés.
+
+                    La formación que se imparte es actualizada y acorde con estos tiempos, marcados por la globalización y la internacionalización económica, que requiere de la aplicación y el desarrollo de la contabilidad internacional, asunto que nos distingue y hace diferentes dentro de los programas de Contaduría Pública."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

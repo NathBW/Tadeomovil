@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="878dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="El Programa de Diseño Industrial promueve como principios de su formación la cultura abierta al diálogo reflexivo y crítico, el intercambio de ideas y orientaciones teóricas, la equidad y la formación integral, a través de elementos mediacionales (pedagogía, didáctica y maestro) que jalonen los procesos psicológicos superiores entendidos como el conjunto de operaciones mentales entre los cuales se destaca el desarrollo del pensamiento crítico, analítico, sintético y propositivo, subordinados al proceso creativo."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

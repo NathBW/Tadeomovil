@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="850dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="En la Tadeo formamos economistas con compromiso social, capaces de aplicar su conocimiento en el entendimiento de los fenómenos que afectan a la sociedad. De esta manera, como economista de la Tadeo podrás formular y evaluar planes, estrategias o proyectos que contribuyan al desarrollo económico y al bienestar colectivo, ya sea que te desempeñes en empresas del Estado, en compañías nacionales o multinacionales, o en tu propias iniciativas empresariales.
+
+                    En el Programa de Economía nos hemos renovado permanentemente en los 55 años de existencia para ofrecerte un ambiente académico dinámico que se ajusta a la realidad internacional de la ciencia económica, a las realidades nacionales de formación que requieren las empresas y la sociedad y a la investigación de temas prioritarios para el país."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

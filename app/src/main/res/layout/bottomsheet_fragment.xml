@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="846dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Nuestro programa de pregrado en Historia del Arte es pionero en la formación profesional de
+                    historiadores del arte en Colombia. Combinamos el conocimiento sólido de la historia del arte occidental,
+                    latinoamericano y colombiano, con la formación en museología y patrimonio. A través de nuestros convenios
+                    con el Museo Colonial, el Museo Nacional, el Museo del Oro y los museos de la Red Cultural del Banco de la
+                    República (MAMU, Casa de Moneda, Museo Botero), nuestros estudiantes podrán acceder a prácticas profesionales
+                     que enriquecerán su formación y brindarán valiosas experiencias."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

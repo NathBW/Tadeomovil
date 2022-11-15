@@ -3,9 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.nataliaber.natiwali">
 
-    <uses-feature android:name="android.hardware.camera" android:required="true"></uses-feature>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18"></uses-permission>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -17,8 +21,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Natiwali"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".Economicas"
+            android:exported="false" />
+        <activity
+            android:name=".Artes"
+            android:exported="false" />
+        <activity
+            android:name=".Sociales"
+            android:exported="false" />
+        <activity
+            android:name=".Ciencias"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
         <activity
             android:name=".camara1"
             android:exported="false" />
@@ -42,10 +59,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -57,7 +74,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
     </application>
 
 </manifest>

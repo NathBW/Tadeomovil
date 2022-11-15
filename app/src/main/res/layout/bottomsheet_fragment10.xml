@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="878dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Con cincuenta años de trayectoria, el Programa de Diseño Gráfico de Utadeo se enfoca en la formación de profesionales competentes en el desarrollo integral e innovador de propuestas y proyectos insertos en el campo de la comunicación gráfica y las mediaciones visuales ancladas en la sociedad y en entornos vitales del mundo contemporáneo. Formamos diseñadores que piensan, ven, leen, cuestionan, imaginan e interpretan la realidad del mundo -diversa y disímil- para transformarlo, para actuar desde él y en él."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</LinearLayout>

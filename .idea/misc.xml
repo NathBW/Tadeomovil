@@ -3,14 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_camara1.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_artes.xml" value="0.15604959384352288" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_camara1.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_ciencias.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_economicas.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_facultades.xml" value="0.2" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_grupos.xml" value="0.1675929884566054" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_grupos.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_ingresar.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_sociales.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_suscribirse.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment10.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment11.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment12.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment13.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment14.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment15.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment16.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment17.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment18.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment19.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment2.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment20.xml" value="0.1628901239846088" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment21.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment22.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment3.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment4.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment5.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment6.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment7.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment8.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment9.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/fragment_blank.xml" value="0.15604959384352288" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/fragment_fullscreen.xml" value="0.1675929884566054" />
       </map>
     </option>
   </component>
