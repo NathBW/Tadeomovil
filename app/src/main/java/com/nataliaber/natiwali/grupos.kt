@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -17,6 +18,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.getValue
 import com.google.firebase.firestore.FirebaseFirestore
 import java.io.File
 import java.io.OutputStream
@@ -30,6 +32,8 @@ class grupos : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val user = auth.currentUser
         var database = FirebaseDatabase.getInstance().reference
+
+
 
 
         val facultad3=findViewById<Button>(R.id.facultades3)
@@ -72,6 +76,10 @@ class grupos : AppCompatActivity() {
         database.addValueEventListener(getdata)
         database.addListenerForSingleValueEvent(getdata)
 
+        if (user !=null){
+            Toast.makeText(baseContext,  "Mira comentarios " + user.email, Toast.LENGTH_LONG).show()
+        }
+
     }
     //fun readFireStoreData() {
     //    val db = FirebaseFirestore.getInstance()
@@ -91,26 +99,5 @@ class grupos : AppCompatActivity() {
     //}
 
 
-    private lateinit var file: File
-    private fun createPhotoFile() {
-        val dir = getExternalFilesDir(Environment.DIRECTORY_PICTURES)!!
-        file = File.createTempFile("IMG_${System.currentTimeMillis()}_", ".jpg", dir)
-    }
-
-    private fun save(content: ContentValues): Uri {
-        var outputStream: OutputStream?
-        var uri: Uri?
-        application.contentResolver.also { resolver ->
-            uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, content)
-            outputStream = resolver.openOutputStream(uri!!)
-        }
-        outputStream.use { output ->
-            getBitmap().compress(Bitmap.CompressFormat.JPEG, 100, output)
-        }
-        return uri!!
-    }
-    private fun getBitmap(): Bitmap {
-        return BitmapFactory.decodeFile(file.toString())
-    }
 
 }

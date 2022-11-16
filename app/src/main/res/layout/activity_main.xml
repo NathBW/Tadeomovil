@@ -48,26 +48,27 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="@string/ya_tengo_cuenta"
-        android:textColor="@color/black"
+        android:textColor="#8D4705"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <Button
         android:id="@+id/ingresar"
         android:layout_width="160dp"
         android:layout_height="55dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="@color/orange"
         android:fontFamily="serif"
         android:text="@string/iniciar_sesi_n"
         android:textColor="#5D4037"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tengocuenta" />
 
@@ -77,13 +78,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="@string/soy_nuev"
-        android:textColor="@color/black"
+        android:textColor="#8D4705"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ingresar"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.299" />
 
     <Button
         android:id="@+id/suscribirse"
@@ -95,9 +97,11 @@
         android:text="@string/suscribirse"
         android:textColor="#5D4037"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cre" />
+        app:layout_constraintTop_toBottomOf="@+id/cre"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

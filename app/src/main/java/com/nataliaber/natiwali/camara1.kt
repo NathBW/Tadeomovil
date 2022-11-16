@@ -1,49 +1,27 @@
 package com.nataliaber.natiwali
 
-import android.app.Activity
-import android.app.Instrumentation
+import android.app.ProgressDialog
 import android.content.ContentValues
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.graphics.BitmapRegionDecoder
-import android.icu.util.Output
-import android.media.Image
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
-import android.view.animation.AnticipateInterpolator
-import android.widget.Button
+import android.util.Log
+import android.widget.*
 import com.nataliaber.natiwali.databinding.ActivityCamara1Binding
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
-import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
+import androidx.core.net.toUri
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.FirebaseFirestoreException
-import com.google.firebase.firestore.FirebaseFirestoreSettings
-import com.google.firebase.firestore.MetadataChanges
-import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ServerTimestamp
-import com.google.firebase.firestore.SetOptions
-import com.google.firebase.firestore.Source
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.firestoreSettings
-import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
 import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
-import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.OutputStream
 
@@ -90,6 +68,7 @@ class camara1 : AppCompatActivity() {
 
             binding.guardar2.setOnClickListener {
                 saveToGallery()
+
             }
         binding.publicar2.setOnClickListener{
             //saveFireStore(input).also {
@@ -97,9 +76,9 @@ class camara1 : AppCompatActivity() {
                 startActivity(mandarlanzar).also {
                     var empno = binding.inputComentarios.text.toString()
                     var esal = binding.editTextTextPersonName.text.toString().toInt()
-
                     database.child(esal.toString()).setValue(comentario(empno))
-                    Toast.makeText(this@camara1, "Comentario guardado", Toast.LENGTH_SHORT).show()
+
+                    Toast.makeText(this@camara1, "Comentario guardado", Toast.LENGTH_LONG).show()
                 }
            // }
         }
@@ -109,6 +88,7 @@ class camara1 : AppCompatActivity() {
         //}
 
     }
+
 
     //fun saveFireStore(input: String) {
     //    val db = FirebaseFirestore.getInstance()
@@ -134,6 +114,8 @@ class camara1 : AppCompatActivity() {
                 //val bitmap = data.extras!!.get("data") as Bitmap
                 val bitmap = getBitmap()
                 binding.imagen.setImageBitmap(bitmap)
+                binding.imagen.setImageBitmap(bitmap)
+                FirebaseStorageManager().uploadImage(this, file.toUri())
             }
         }
 
@@ -141,13 +123,15 @@ class camara1 : AppCompatActivity() {
     private fun createPhotoFile() {
         val dir = getExternalFilesDir(Environment.DIRECTORY_PICTURES)!!
         file = File.createTempFile("IMG_${System.currentTimeMillis()}_", ".jpg", dir)
+
+
     }
 
     private fun saveToGallery() {
         val content = createContent()
         val uri = save(content)
         clearContents(content, uri)
-        Toast.makeText(this, "Imagen guardada",Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Imagen guardada en galeria",Toast.LENGTH_LONG).show()
     }
 
     private fun createContent(): ContentValues {
@@ -184,4 +168,36 @@ class camara1 : AppCompatActivity() {
         return BitmapFactory.decodeFile(file.toString())
     }
 
+}
+
+class FirebaseStorageManager {
+    private lateinit var auth : FirebaseAuth
+
+    private val TAG = "FirebaseStorageManager"
+    private val mStorageReference = FirebaseStorage.getInstance().reference
+    private lateinit var mProgressDialog: ProgressDialog
+    fun uploadImage(mContext: Context, imaggeURI: Uri) {
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser
+        mProgressDialog = ProgressDialog(mContext)
+        mProgressDialog.setMessage("Espere, la imagen esta cargando")
+        mProgressDialog.show()
+        val imagefilenameee = "users/profilePic${System.currentTimeMillis()}.png"
+        val uploadTask = mStorageReference.child(imagefilenameee).putFile(imaggeURI)
+        uploadTask.addOnSuccessListener {
+            Log.e(TAG,"Image upload successfully")
+            Toast.makeText(mContext, "Imagen guardada en Storage", Toast.LENGTH_LONG).show()
+            val download = mStorageReference.child(imagefilenameee).downloadUrl
+            download.addOnSuccessListener {
+                Log.e(TAG,"IMAGE PATH: ")
+                mProgressDialog.dismiss()
+            }.addOnFailureListener{
+                mProgressDialog.dismiss()
+            }
+
+        }.addOnFailureListener{
+            Log.e(TAG, "Image upload failed")
+
+    }
+    }
 }
