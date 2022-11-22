@@ -98,7 +98,7 @@ class suscribirse : AppCompatActivity() {
                         // [END add_ada_lovelace]
                     }
 
-                    val suslanzar = Intent(this, home::class.java)
+                    val suslanzar = Intent(this, MainActivity2::class.java)
                     startActivity(suslanzar)
 
 

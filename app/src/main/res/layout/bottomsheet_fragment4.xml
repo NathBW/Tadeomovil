@@ -13,8 +13,7 @@
                     Interamericana de Prensa a través del Consejo Latinoamericano de Acreditación de la Educación en
                     Periodismo y Comunicación CLAEP. Somos pioneros en la formación de profesionales de la comunicación
                     y el periodismo y nuestros estudiantes son formados para desempeñarse en cualquiera de los campos de
-                    la comunicación y el periodismo. El Programa cuenta con Re Acreditación de Alta calidad otorgada por
-                    el Ministerio de Educación Nacional."
+                    la comunicación y el periodismo."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

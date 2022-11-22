@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_papel_blanco_arte_35956_2379"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/bienve3"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="30dp"
+        android:text="@string/suscribirse2"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="301dp"
+        android:layout_height="52dp"
+        android:fontFamily="serif"
+        android:text="Informacion"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:layout_margin="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve3"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        android:layout_margin="35sp"
+        android:layout_marginTop="20sp"
+        android:autofillHints=""
+        android:background="@color/black"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:paddingLeft="20sp"
+        android:textColor="#607D8B"
+        app:layout_constraintBottom_toTopOf="@+id/crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienve3"
+        app:layout_constraintVertical_bias="0.436"
+        tools:text="Nombre" />
+
+    <EditText
+        android:id="@+id/contraseña2"
+        android:layout_width="349dp"
+        android:layout_height="64dp"
+        android:layout_margin="35sp"
+        android:layout_marginBottom="76dp"
+        android:autofillHints=""
+        android:background="@color/black"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:paddingLeft="20sp"
+        android:textColor="#607D8B"
+        app:layout_constraintBottom_toTopOf="@+id/crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="0.031"
+        tools:text="Apellido" />
+
+    <Button
+        android:id="@+id/crear"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="236dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="serif"
+        android:text="@string/crear"
+        android:textColor="#5D4037"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESCRIBA SU NOMBRE:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-160dp"
+        android:text="ESCRIBA SU APELLIDO:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/contraseña2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

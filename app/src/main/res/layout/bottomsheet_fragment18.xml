@@ -9,9 +9,7 @@
         android:layout_height="853dp"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="El Programa de Administración de Empresas Utadeo tiene un gran balance entre profesores de planta con una gran calificación académica orientados a la investigación, y profesores de cátedra con una muy buen experiencia directiva que matizan las teorías y contribuyen a desarrollar un criterio insustituible a la hora de enfrentar los desafíos del trabajo.
-                    Preparamos a nuestros egresados para que puedan trabajar indistintamente como directivos de grandes empresas, de pequeñas y famiempresas, o ser ellos mismos emprendedores.
-                    En nuestro programa, los estudiantes aprenden a pensar, hablar y escribir en inglés y les damos esa visión de mundo que el mercado laboral cada vez reclama más de los profesionales."
+        android:text="El Programa de Administración de Empresas Utadeo tiene un gran balance entre profesores de planta con una gran calificación académica orientados a la investigación, y profesores de cátedra con una muy buen experiencia directiva que matizan las teorías y contribuyen a desarrollar un criterio insustituible a la hora de enfrentar los desafíos del trabajo."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

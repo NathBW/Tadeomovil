@@ -9,7 +9,7 @@
         android:layout_height="853dp"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="En Utadeo, la Ingeniería de Sistemas se concibe como un método con enfoque interdisciplinario, cuyo objetivo es estudiar y comprender la realidad en la búsqueda de soluciones innovadoras, con el propósito de implementar u optimizar sistemas complejos soportados en Tecnologías de la Información y las Comunicaciones (TIC).  El programa está planteado bajo una amplia oferta de horarios, acompañamiento académico a través de tutorías y consejerías, con la posibilidad de adelantar dos programas simultáneamente, y de cursar tres periodos académicos en el año. Por la calidad de sus programas académicos, su organización y el cumplimiento de su función social, entre otros aspectos, contamos con Acreditación Institucional de Alta Calidad."
+        android:text="En Utadeo, la Ingeniería de Sistemas se concibe como un método con enfoque interdisciplinario, cuyo objetivo es estudiar y comprender la realidad en la búsqueda de soluciones innovadoras, con el propósito de implementar u optimizar sistemas complejos soportados en Tecnologías de la Información y las Comunicaciones (TIC).  El programa está planteado bajo una amplia oferta de horarios, acompañamiento académico a través de tutorías y consejerías, con la posibilidad de adelantar dos programas simultáneamente, y de cursar tres periodos académicos en el año."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

@@ -52,6 +52,7 @@
         android:layout_height="51dp"
         android:fontFamily="serif"
         android:text="@string/facultades"
+        android:layout_marginLeft="70dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="40sp"

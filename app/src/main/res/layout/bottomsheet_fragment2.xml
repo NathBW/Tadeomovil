@@ -14,9 +14,7 @@
                      Formamos profesionales integrales, con una comprensión transversal de los oficios del cine, con un
                      manejo riguroso de los aspectos tecnológicos y técnicos del oficio audiovisual, conocedores de las
                      dimensiones narrativas y técnicas del lenguaje cinematográfico, con un criterio amplio y diverso de
-                     los contextos culturales, sociales y estéticos. Nos interesa promover el diálogo permanente entre
-                     industria, creadores y academia para poder comprender las necesidades y oportunidades del medio
-                      profesional."
+                     los contextos culturales, sociales y estéticos."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

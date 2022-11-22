@@ -1,12 +1,16 @@
 package com.nataliaber.natiwali
 
+import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.app.ProgressDialog
+import android.app.appsearch.SetSchemaRequest.READ_EXTERNAL_STORAGE
 import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
@@ -22,17 +26,22 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.UploadTask
 import java.io.File
 import java.io.OutputStream
 
 
 class camara1 : AppCompatActivity() {
+    private val REQUEST_GALLERY = 1002
     private val filer = 1
     private val database = Firebase.database
     val MyRef = database.getReference("Imagenes")
     private lateinit var imgUri: Uri
     private lateinit var auth : FirebaseAuth
     private lateinit var binding : ActivityCamara1Binding
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCamara1Binding.inflate(layoutInflater)
@@ -47,6 +56,9 @@ class camara1 : AppCompatActivity() {
             val atraspublicarlanzar = Intent(this, grupos::class.java)
             startActivity((atraspublicarlanzar))
         }
+
+
+
         binding.Camara.setOnClickListener{
 
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
@@ -63,13 +75,23 @@ class camara1 : AppCompatActivity() {
            //camara.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
                 camara.launch(intent)
         }
+
+
+
+
+
         //val input = findViewById<EditText>(R.id.comentarios).text.toString()
         //val input = binding.inputComentarios.text.toString()
+
+
 
             binding.guardar2.setOnClickListener {
                 saveToGallery()
 
+
+
             }
+
         binding.publicar2.setOnClickListener{
             //saveFireStore(input).also {
                 val mandarlanzar = Intent(this, grupos::class.java)
@@ -87,7 +109,16 @@ class camara1 : AppCompatActivity() {
         //    startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
         //}
 
+
+
+
+
+
+
+
     }
+
+
 
 
     //fun saveFireStore(input: String) {
@@ -115,7 +146,7 @@ class camara1 : AppCompatActivity() {
                 val bitmap = getBitmap()
                 binding.imagen.setImageBitmap(bitmap)
                 binding.imagen.setImageBitmap(bitmap)
-                FirebaseStorageManager().uploadImage(this, file.toUri())
+                uploadImage(this, file.toUri())
             }
         }
 
@@ -168,13 +199,12 @@ class camara1 : AppCompatActivity() {
         return BitmapFactory.decodeFile(file.toString())
     }
 
-}
 
-class FirebaseStorageManager {
-    private lateinit var auth : FirebaseAuth
+
+
 
     private val TAG = "FirebaseStorageManager"
-    private val mStorageReference = FirebaseStorage.getInstance().reference
+    val mStorageReference = FirebaseStorage.getInstance().reference
     private lateinit var mProgressDialog: ProgressDialog
     fun uploadImage(mContext: Context, imaggeURI: Uri) {
         auth = FirebaseAuth.getInstance()
@@ -195,9 +225,13 @@ class FirebaseStorageManager {
                 mProgressDialog.dismiss()
             }
 
+
+
         }.addOnFailureListener{
             Log.e(TAG, "Image upload failed")
 
+        }
     }
-    }
+
 }
+

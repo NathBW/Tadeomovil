@@ -9,7 +9,7 @@
         android:layout_height="857dp"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="La Ingeniería Industrial en la Universidad de Bogotá Jorge Tadeo Lozano es un programa dirigido a buscar sistemáticamente la optimización de los procesos en todo tipo de organización productiva. El ingeniero industrial de la UJTL estará en capacidad optimizar los recursos disponibles para dirigir, operar, mantener y administrar sistemas de producción, de bienes o servicios, en la búsqueda de una mayor productividad, calidad, flexibilidad, competitividad y rentabilidad; así como de asimilar, desarrollar y adaptar la tecnología adecuada para lograr el beneficio social y económico, con una clara conciencia frente al manejo sostenible de los recursos."
+        android:text="La Ingeniería Industrial en la Universidad de Bogotá Jorge Tadeo Lozano es un programa dirigido a buscar sistemáticamente la optimización de los procesos en todo tipo de organización productiva. El ingeniero industrial de la UJTL estará en capacidad optimizar los recursos disponibles para dirigir, operar, mantener y administrar sistemas de producción, de bienes o servicios."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

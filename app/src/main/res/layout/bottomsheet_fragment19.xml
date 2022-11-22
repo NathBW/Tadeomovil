@@ -10,7 +10,7 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:text="El programa de Comercio Internacional y Finanzas forma profesionales integrales, críticos, creativos y capaces de asumir los retos de la internacionalización de los mercados. Educa a los estudiantes en tres áreas principales: teoría y política comercial, gerencia del comercio y finanzas
-                    Este programa busca preparar una generación de líderes capaces de formular la nueva política comercial del país; visionarios con habilidades en gerencia del comercio internacional; profesionales que puedan comprender, investigar, innovar, proponer y aportar a las dinámicas de las organizaciones, los gobiernos y los mercados financieros nacionales e internacionales, de una manera ética y responsable, comprometidos con el desarrollo económico, comercial, social y ambiental."
+                    Este programa busca preparar una generación de líderes capaces de formular la nueva política comercial del país; visionarios con habilidades en gerencia del comercio internacional; profesionales que puedan comprender, investigar, innovar, proponer y aportar a las dinámicas de las organizaciones."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

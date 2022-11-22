@@ -14,8 +14,7 @@
                      con destreza en el ámbito laboral nacional e internacional. Como parte de la Facultad de Ciencias
                      Sociales, la formación impartida en el marco del Programa de Derecho busca que el conocimiento de la
                      normatividad nacional e internacional se complemente con el estudio de las Relaciones Internacionales y
-                     la Ciencia Política. Este diferencial hace que las personas que culminan la carrera se destaquen por sus
-                     capacidades de buscar soluciones jurídicas innovadoras que impacten de forma positiva a la sociedad."
+                     la Ciencia Política."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

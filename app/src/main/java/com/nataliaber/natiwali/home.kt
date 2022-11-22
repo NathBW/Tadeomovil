@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -24,11 +25,20 @@ class home : AppCompatActivity() {
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
+        auth = Firebase.auth
         val user = auth.currentUser
         if (user !=null){
             Toast.makeText(baseContext, "Bienvenido " + user.email , Toast.LENGTH_SHORT).show()
         }
 
+
+        binding.logout.setOnClickListener{
+            logOut().also {
+                val logoutlanzar = Intent(this, MainActivity::class.java)
+                startActivity(logoutlanzar)
+
+            }
+        }
 
 
         val facultad=findViewById<Button>(R.id.facultadhome)
@@ -71,6 +81,14 @@ class home : AppCompatActivity() {
                 }
 
             }
+    }
+
+
+    private fun logOut () {
+        auth.signOut().also {
+            Toast.makeText(baseContext, "Saliste" , Toast.LENGTH_SHORT).show()
+        }
+
     }
 
 }

@@ -10,10 +10,12 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_facultades.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_grupos.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_ingresar.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_ingresar.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_main2.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_nombre.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_sociales.xml" value="0.18" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_suscribirse.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/activity_suscribirse.xml" value="0.21" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomasheetcamera_fragment.xml" value="0.16673792218896966" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment10.xml" value="0.1675929884566054" />
@@ -39,6 +41,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/bottomsheet_fragment9.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/fragment_blank.xml" value="0.15604959384352288" />
         <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/fragment_fullscreen.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/natiwali/app/src/main/res/layout/publicar.xml" value="0.16673792218896966" />
       </map>
     </option>
   </component>

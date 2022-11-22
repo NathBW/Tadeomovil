@@ -9,7 +9,7 @@
         android:layout_height="878dp"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="El programa profesional en Modelado y Simulación Computacional (MSC) tiene como propósito general formar profesionales capacitados para el entendimiento, diagnóstico y solución a problemas concretos mediante la generación y aplicación de conocimientos en el área del modelado y simulación computacional de sistemas y procesos, en los campos de la ingeniería y las ciencias aplicadas. En su diseño curricular tiene en cuenta los objetivos de aprendizaje y competencias que responden a la creciente demanda de profesionales capaces de liderar la transformación tecnológica y digital (Revolución 4.0), con énfasis en el diseño, desarrollo, implementación y gestión de modelos y simulaciones computacionales fuertemente ancladas en la disponibilidad (de grandes cantidades) de datos, capacidad de cómputo e información digital."
+        android:text="El programa profesional en Modelado y Simulación Computacional (MSC) tiene como propósito general formar profesionales capacitados para el entendimiento, diagnóstico y solución a problemas concretos mediante la generación y aplicación de conocimientos en el área del modelado y simulación computacional de sistemas y procesos, en los campos de la ingeniería y las ciencias aplicadas."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>

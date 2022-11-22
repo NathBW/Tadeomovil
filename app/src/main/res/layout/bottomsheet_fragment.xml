@@ -13,8 +13,7 @@
                     historiadores del arte en Colombia. Combinamos el conocimiento sólido de la historia del arte occidental,
                     latinoamericano y colombiano, con la formación en museología y patrimonio. A través de nuestros convenios
                     con el Museo Colonial, el Museo Nacional, el Museo del Oro y los museos de la Red Cultural del Banco de la
-                    República (MAMU, Casa de Moneda, Museo Botero), nuestros estudiantes podrán acceder a prácticas profesionales
-                     que enriquecerán su formación y brindarán valiosas experiencias."
+                    República (MAMU, Casa de Moneda, Museo Botero)."
         android:textColor="@color/white"
         android:textSize="24sp" />
 </LinearLayout>
